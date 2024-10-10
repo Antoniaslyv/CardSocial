@@ -2,6 +2,8 @@
 
 /* conf tag universal*/
 *{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -41,4 +43,56 @@
     box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 12px;
     /* direnciona o img no eixo y */
     transform: translateY(-65px);
+}
+
+
+.container-text{
+    margin-top: -40px; /*Espaçamento na parte superior para
+     criar um espaço entre a bordar e o texto*/
+}
+
+.h1.nome{
+    margin: 0; /*Retira o espaçamento de margin*/
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;/*cria uma 
+    sombra em volta do texto do texto, a propriedade precisa de: (cor,
+     deslo horizontal, deslo vertical, raio de desfoque)*/
+}
+
+h3.desc{
+    font-weight: 400; /*Ajusta o tamanho da fonte*/
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px; /*Cria uma
+    sombra no texto*/
+}
+
+.icone-endereço{
+    width: 22px; /*largura do caixa*/
+    filter: brightness(10);  /* altera a opacidade da imagem
+    escala de 0 - 10*/
+}
+
+.socials{
+    margin: 30px 0; /*margem da tag 'div' */
+}
+
+.socials a{
+    margin-right: 40px; /*margem da tag 'a' do lado direito */
+}
+
+.socials a:last-child{ /*':last-chil1 E um pseudo-elemento CSS
+que seleciona o último elemento filho */
+    margin-right: 0px; /*retira a margem do ultimo icone do
+     lado esquerdo */
+}
+
+.socials img{
+    width: 50px;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+}
+.socials img:hover{
+    transform: scale(110%);
+}
+.socials img:active{
+    transform:  scale(100%);
 }
